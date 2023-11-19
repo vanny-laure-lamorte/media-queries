@@ -1,0 +1,106 @@
+/* ---------------------------Main----------------------*/
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+body {
+        font-family: 'Sen', sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.section0 {
+    margin: 0 5% 0;
+}
+.section0 p {
+    font-size: 18px;
+}
+
+.section0 h1 {
+    margin: 0 0 30px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column; 
+    margin: 10px;  
+    border: 1px solid #e4e4e4;
+}
+
+.section-a {
+    display: flex;
+    justify-content: center;
+    background-color: #e4e4e4;
+    height: 258px;
+    width: 386px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.section-a:hover {   
+    background-color: #ffb700;
+}
+
+.section-b {
+    display: flex;
+    flex-wrap: wrap;
+    height: 180px;
+    width: 250px;
+    padding: 10px;  
+}
+
+p {
+    color: #5c5b5b;
+    font-size: 15px;
+    margin: 30px 20px 40px 20px;
+}
+
+.p1 {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.p2 {
+    font-size: 22px;
+    color: rgb(36, 35, 35);
+    font-weight: 400;
+    margin: 0;
+}
+
+.p3 {
+    font-size: 16px;
+    color: #bdbdbd;
+    font-weight: 400;
+}
+
+.img-musée {
+    height: 257px;
+    width: 376px;
+    transition: transform 0.3s ease;
+}
+
+.img-musée:hover {
+    transform: scale(1.05);
+}
+
+/* ---MEDIA QUERIES---*/
+
+@media screen and (max-width: 870px) 
+{
+    .section-a {
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .img-musée {
+        height: auto;
+        width: 100%
+    }
+}
